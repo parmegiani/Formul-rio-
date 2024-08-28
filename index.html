@@ -9,17 +9,28 @@
 
 <body>
     <form action="https://formspree.io/f/xnnawboj" method="POST">
-        <input type="text"  name="Digite seu nome:">
-        <input type="text"  name="Digite seu e-mail">
-        <input type="text"  name="Você trabalha?">
+        <p>Digite seu nome</p>
+        <input type="text"  name="Nome de usuário" placeholder="Nome completo" required>
+        <p>Digite seu email</p>
+        <input type="email"  name="" placeholder="email@gmail.com" required>
+        <p>Você trabalha?</p>
         <input type="radio" name=""  value="sim"> Sim
         <input type="radio" name=""  value="não"> Não
         <input type="checkbox" name=""> Li, e concordo
+        <p>Selecione seu Estado</p>
         <select name="estados" id="">
             <option value="Acre">Acre</option>
             <option value="Alagoas">Alagoas</option>
             <option value="Amapá">Amapá</option>
         </select>
+        <p>
+            Selecione sua idade:
+        </p>
+        <select name="idade" id="">
+            <option value="20"> Entre 20 a 50</option>
+            <option value="50"> Entre 50 a 70</option>
+        </select>
+        <p>Deixe aqui sua reclamação:</p>
         <textarea name="comentário"></textarea>
         <button type="button">Enviar</button>
         <button type="reset">Cancelar</button>
